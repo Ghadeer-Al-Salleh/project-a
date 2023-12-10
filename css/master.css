@@ -1,0 +1,215 @@
+*
+{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+h1 
+{
+    margin: 0;
+    padding: 0;
+}
+.cont 
+{
+    padding: 0 30px;
+    margin: 0 auto;
+}
+.section1 .text
+{
+    padding: 20px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.section1 span 
+{
+    margin-right: 20px;
+    background-color: red;
+    width: 4px;
+    height: 39px;
+}
+
+.cards 
+{
+    margin-top: 30px;
+    margin-bottom: 50px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.cards .card 
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 2px 2px 2px #a58282;
+}
+
+.cards .card i 
+{
+    background-color: black;
+    padding: 10px;
+    font-size: 20px;
+    border: 5px solid gray;
+    border-radius: 50%;
+    color: white;
+    margin: 20px 0;
+}
+.cards .card p 
+{
+    margin: 10px 0;
+}
+.cards .card 
+{
+    border-radius: 20px;
+    padding: 20px;
+    background-color: white;
+}
+
+
+
+/* ================= */
+
+footer 
+{
+    padding-left: 20px;
+    background-color: black;
+    color: white;
+    padding-bottom: 70px;
+    padding-top: 30px;
+}
+
+footer .box 
+{
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+    column-gap: 20px;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+footer .box1 img
+{
+    width: 60px;
+    height: 60px;
+}
+
+footer .box .box1 
+{
+    display: grid;
+    grid-template-columns: repeat(1,1fr);
+}
+footer p 
+{
+    margin: 10px 0;
+}
+footer a 
+{
+    text-decoration: none;
+    color: white;
+    margin: 10px 0;
+}
+footer h4 
+{
+    margin: 10px 0;
+}
+footer .icons i 
+{
+    margin: 0 10px;
+    color: white;
+    transition: 0.4s;
+} 
+footer .icons i:hover 
+{
+    color: blue;
+}
+footer .icons 
+{
+    display: flex;
+    align-items: center;
+}
+footer .box0 .email
+{
+    background-color: black;
+    color: white;
+    border: 2px solid white;
+    padding: 7px;
+}
+footer .submit 
+{
+    width: 30%;
+    margin-top: 10px;
+    background-color: blue !important;
+    border: none;
+    padding: 10px;
+}
+hr 
+{
+    background-color: #11112733;
+    width: 81%;
+    height: 1px;
+    margin: 10px 0; 
+    display: none;
+}
+
+
+/* Footer */
+
+.foot 
+{
+    text-align: center;
+    background-color: black;
+    padding: 10px;
+    border: 1px solid #655454;
+    color: gray;
+}
+
+@media (max-width : 767px) {
+    .section1 .text h1 
+    {
+        font-size: 15px;
+    }
+    .section1 span 
+    {
+        height: 33px;
+        width: 2px;
+    }
+    .section1 .cards .card 
+    {
+        margin: 15px 0 !important;
+    }
+    .section1 .cards
+    {
+        flex-direction: column;
+    }
+    footer .box 
+    {
+        grid-template-columns: repeat(1,1fr);
+    }
+    hr 
+    {
+        display: block;
+    }
+    footer form 
+    {
+        display: flex;
+        flex-direction: column;
+        width: 70%;
+    }
+}
+@media (max-width : 990px) {
+    .section1 .cards .card 
+    {
+        margin: 0 15px;
+    }
+    footer .box 
+    {
+        grid-template-columns: repeat(1,1fr);
+    }
+    hr 
+    {
+        display: block;
+    }
+}
